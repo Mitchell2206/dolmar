@@ -1,0 +1,40 @@
+.footer {
+  background-image: url(../img/lo.webp);
+  background-repeat: no-repeat;
+  grid-area: footer;
+
+  .container {
+    .row-cols-5 {
+      justify-content: space-around;
+      color: rgb(143, 119, 71);
+    }
+
+    .redes {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+
+    .redes-container {
+      display: flex;
+      flex-direction: column;
+    
+      
+      ul {
+        flex-direction: row;
+
+        img {
+          transition: 1s;
+          margin: 5px;
+          width: 40px;
+          height: 40px;
+
+          &:hover {
+            transform: scale(1.1);
+
+          }
+        }
+      }
+    }
+  }
+}

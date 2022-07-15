@@ -1,0 +1,377 @@
+@import "../base/variable";
+
+.main {
+  grid-area: main;
+  width: 100%;
+
+  .vestier {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.699)),
+      url(../img/vestier.jpg);
+    background-position: center;
+    color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      color: rgb(218, 203, 203);
+      font-size: 50px;
+      font-family: "Playfair Display", serif;
+    }
+
+    p {
+      font-size: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgb(214, 198, 165);
+      font-size: 20px;
+    }
+  }
+
+  .destacados {
+    padding: 20px;
+
+    h2 {
+      display: flex;
+      margin: 5px;
+      padding: 10px;
+      align-items: center;
+      justify-content: space-around;
+      color: $principal;
+      font-size: 30px;
+      font-family: "Playfair Display", serif;
+    }
+  }
+
+  .card-group {
+    .card {
+      background-color: #000000;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      transition: 1s;
+      padding: 20px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 250px;
+        height: 300px;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+        -webkit-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .card-title {
+          color: rgb(184, 158, 103);
+          font-family: "Playfair Display", serif;
+          justify-content: center;
+          align-items: center;
+        }
+
+        a {
+          justify-content: center;
+          text-decoration: none;
+          color: rgb(214, 198, 165);
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+.main-nuevo {
+  grid-area: main;
+
+  .destacados {
+    padding-bottom: 20px;
+
+
+
+    h1 {
+      display: flex;
+      margin: 5px;
+      padding: 20px;
+      align-items: center;
+      justify-content: space-around;
+      color: $principal;
+      font-family: "Playfair Display", serif;
+    }
+  }
+
+  .card-group {
+
+    .card {
+      background-color: #000000;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      transition: 1s;
+      padding: 20px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 250px;
+        height: 300px;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+        -webkit-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+      }
+
+      .card-body {
+        color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .card-title {
+          color: rgb(184, 158, 103);
+          font-family: "Playfair Display", serif;
+
+        }
+
+        .card-text {
+          color: rgb(236, 236, 236);
+          font-family: 'Mukta', sans-serif;
+        }
+
+        a {
+          justify-content: center;
+          text-decoration: none;
+          color: rgb(214, 198, 165);
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.main-mision {
+  display: flex;
+  margin: 10px;
+  font-family: "Playfair Display", serif;
+  color: $principal;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-area: main;
+
+  h1 {
+    display: flex;
+    font-family: "Playfair Display", serif;
+    color: $principal;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row;
+
+    .mision-tex {
+      display: flex;
+      align-items: center;
+      background-color:rgb(46, 12, 12) ;
+      font-family: "Playfair Display", serif;
+      color: rgb(184, 158, 103);
+      margin:auto;
+      border-radius: 5px;
+      font-size: 20px;
+      align-items: center;
+      
+    }
+    
+    div{
+      font-size: 20px;
+      padding: 10px;
+      margin: 10px;
+      color :rgb(184, 158, 103)
+     }
+
+    .mision {
+
+      img {
+        
+        margin:10px ;
+        width: 650px;
+        border-radius:5px;
+      }
+    }
+  }
+
+
+  .ecology {
+
+    img {
+      width: 100px;
+      padding: 10px;
+    }
+  }
+}
+
+
+.main-preguntas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: main;
+
+  .frecuentes {
+    color: $principal;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .accordion {
+    padding: 10px;
+    margin: 10px;
+    width: 600px;
+    
+
+    .accordion-item {
+      background-color: rgb(46, 12, 12);
+      color: aliceblue;
+
+      .accordion-header {
+      
+
+        .accordion-button {
+          background-color: rgb(46, 12, 12);
+          color: beige
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.main-contacto {
+  display: flex;
+  justify-content: left;
+  grid-area: main;
+  margin: 50px;
+
+  .ropa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      color: $principal;
+    }
+
+    h2 {
+      font-size: 25px;
+      margin: 40px;
+      color: rgb(184, 158, 103);
+      font-family: 'Playfair Display', serif;
+    }
+
+    P{
+      font-size: 25px;
+      margin: 40px;
+      color: rgb(184, 158, 103);
+      font-family: 'Playfair Display', serif;
+    }
+
+    iframe {
+      padding: 10px;
+      margin-left: 10px;
+      width: 400px;
+      height: 200px;
+      border-radius: 50px;
+    }
+  }
+
+
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    #formulario {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(46, 12, 12);
+      padding: 10px;
+      border-radius: 10px;
+      width: 400px;
+
+      .venta {
+        font-family: "Playfair Display", serif;
+        color: rgb(226, 207, 164);
+        font-size: 20px;
+        margin: 10px;
+      }
+
+      label {
+        font-family: "Playfair Display", serif;
+        margin: 2px;
+        font-size: 14px;
+        color: rgb(184, 158, 103);
+      }
+
+      input  {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+      }
+      
+      
+
+      #modif02 {
+        width: 200px;
+        height: 100px;
+      }
+
+      #aster {
+        margin: 5px;
+        color: rgb(201, 185, 152);
+      }
+
+      .botonAcceder {
+        padding: 5px;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.main-preguntas {
+  .accesorios{
+    display: flex;
+    flex-direction: row;
+  }
+}

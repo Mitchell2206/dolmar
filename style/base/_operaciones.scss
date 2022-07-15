@@ -1,0 +1,13 @@
+$dimension: 400px;
+
+@each $accesorios in botas, bolso, tapados {
+    .#{$accesorios}-fondo{
+        width: $dimension / 2 + 60px;
+        height: 370px;
+        background-image: url('../img/#{$accesorios}.jpg');
+        margin: 4px;
+        border-radius: 4px;
+        background-position: center;
+        background-size: cover;
+    }
+}

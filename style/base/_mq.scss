@@ -1,0 +1,125 @@
+@media screen and (max-width: 952px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .main .vestier p {
+        font-size: 25px;
+    }
+
+    .main-mision .intro .mision img {
+        width: 700px;
+    }
+
+    .main-mision .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-contacto {
+        justify-content: center;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .main .vestier p {
+        font-size: 20px;
+    }
+
+    .main-mision .intro .mision img {
+        width: 500px;
+    }
+
+    .main-mision .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-mision .intro div{
+        font-size: 20px;
+    }
+
+    .main-mision .video iframe {
+        width: 500px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-contacto {
+        display: flex;
+        flex-direction: column;
+
+        .contacto {
+            justify-content: center;
+            align-items: center;
+
+            #formulario {
+                width: 350px;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+    .main .vestier p {
+        margin: 5px;
+        padding: 2px;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .main-mision .intro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .main-mision .intro .mision img {
+        width: 350px;
+        justify-content: center;
+    }
+
+    .main-contacto {
+        justify-content: center;
+        margin: 50px;
+    }
+
+    .main-mision .video iframe {
+        width: 300px;
+        height: 200px;
+
+    }
+
+    .main-mision .ecology img {
+        width: 80px;
+        padding: 10px;
+    }
+
+    .main-preguntas .accordion {
+
+        width: 400px;
+        height: 400px;
+    }
+
+    .footer .container .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: space-around;
+
+    }
+
+
+}

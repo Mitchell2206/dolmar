@@ -1,0 +1,25 @@
+.header {
+    background-image: url(../img/la.jpg);
+    grid-area: header;
+  
+    .navbar {
+      .container-fluid {
+  
+        img {
+          width: 100px;
+          height: 60px;
+        }
+  
+        .collapse {
+          .navbar-nav {
+            .nav-item {
+              .nav-link {
+                color: rgb(206, 162, 50);
+                font-family: "Playfair Display", serif;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
