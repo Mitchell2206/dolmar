@@ -83,7 +83,7 @@ burberry()*/
 
 
 
-
+/*
 var perfume = "burberry"
 var digito = perfume.length
 var marcas = "channel"
@@ -104,20 +104,39 @@ for (let i = 0; i < perfume.length; i++) {
 const expensas = function (cuota, cuota2) {
 
     for (let i = 0; i <= cuota; i++) {
-        if ( cuota >= cuota2){
+        if (cuota >= cuota2) {
             console.log("el max de cuota son 20, tenemos un error asi que te sale gratis")
         } else if (cuota <= cuota2) {
-        console.log(`El precio correspondiente: ${cuota2}`)
+            console.log(`El precio correspondiente: ${cuota2}`)
 
         }
-            
+
     }
 
 }
 
-expensas(19,20)
+expensas(19, 20)*/
 
 
 
+
+const tarjetas = POKEMON.pokemon.reduce((acc, elemento) => {
+
+    return acc + `
+      <div class="tarjetas">
+         <div class="img-container">
+            <img src=${elemento.img} alt=${elemento.name}>
+            </div>
+            <p>
+              ${elemento.name}
+           </p>
+       
+    </div>
+    `
+},"")
+
+const tarjetasAlfin = document.querySelector(".tarjetas")
+
+console.log(tarjetas)
 
 
