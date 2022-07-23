@@ -192,9 +192,3 @@ for (let i = 4; i < nuevos.length; i++) {
     }
 
 }
-
-/*const camperas = tienda2.find(tienda2 => camperas.nombre > 'camp');
-console.log(camperas);*/
-
-const camperas = nuevos.find(nuevos => camperas.nombre == 'vestido');
-console.log(camperas)
