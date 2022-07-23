@@ -115,7 +115,7 @@ const expensas = function (cuota, cuota2) {
 
 }
 
-expensas(19, 20)*/
+expensas(19, 20)
 
 
 
@@ -139,4 +139,62 @@ const tarjetasAlfin = document.querySelector(".tarjetas")
 
 console.log(tarjetas)
 
+*/
 
+
+
+const tienda = ["Campera", "Vestido", "CampZara", "CampTigre", "CampNegra"]
+
+console.log(tienda)
+
+tienda.unshift("Saco")
+
+console.log(tienda)
+
+
+
+class tienda2 {
+    constructor(id, nombre, precio) {
+        this.id = id
+        this.nombre = nombre
+        this.precio = precio
+    }
+}
+
+const nuevos = []
+
+console.log(nuevos)
+
+nuevos.push(new tienda2(0, "vestido2", 17000))
+nuevos.push(new tienda2(1, "Vestido", 12000))
+nuevos.push(new tienda2(2, "CampZara", 20000))
+nuevos.push(new tienda2(3, "CampTigre", 19000))
+nuevos.push(new tienda2(4, "CampNegra", 18000))
+
+console.log(nuevos)
+
+const soloCamperas = nuevos.slice(2, 5)
+console.log(soloCamperas)
+
+const soloVestido = nuevos.slice(0, 2)
+console.log(soloVestido)
+
+
+const prenda = prompt("Tenemos Vestido y Campera")
+
+
+for (let i = 4; i < nuevos.length; i++) {
+
+    if (prenda == "campera") {
+        console.log(soloCamperas)
+    } else if (prenda =="vestido"){
+        console.log(soloVestido)
+    }
+
+}
+
+/*const camperas = tienda2.find(tienda2 => camperas.nombre > 'camp');
+console.log(camperas);*/
+
+const camperas = nuevos.find(nuevos => camperas.nombre == 'vestido');
+console.log(camperas)
