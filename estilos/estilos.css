@@ -500,11 +500,14 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 5px;
+  height: 40px;
+  width: 250px;
 }
 
 .main-contacto .contacto #formulario #modif02 {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  border-radius: 5px;
+  height: 150px;
 }
 
 .main-contacto .contacto #formulario #aster {
@@ -513,8 +516,9 @@ body {
 }
 
 .main-contacto .contacto #formulario .botonAcceder {
-  padding: 5px;
-  margin: 10px;
+  width: auto;
+  padding: 7px;
+  margin: 5px;
 }
 
 .main-preguntas .accesorios {
