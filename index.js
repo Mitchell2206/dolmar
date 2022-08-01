@@ -83,21 +83,33 @@ class cliente {
     }
   
 }
+ const saludo = document.querySelector(".bienvenido")
+ 
+ function SaludoDeIngreso (){
+    saludo.innerHTML = `Bienvenido ${inputNombre.value} ${inputApellidos.value}, te estaremos contactando`
+    
+}
+    
+ 
+
 
  formulario.onsubmit = (event) => {
     event.preventDefault()
     console.log(event)
     clientes.push(new cliente(inputNombre.value, inputApellidos.value, inputTelefono.value, inputMail.value, inputComentario.value))
     console.log(clientes)
-    
-    const guardarClientes = JSON.stringify(clientes);
-    localStorage.setItem ("clientes", guardarClientes);
+    localStorage.setItem("clientes", JSON.stringify(clientes));
+    const otrosClientes = JSON.parse(localStorage.getItem("clientes"));
+    console.log(otrosClientes)
+    SaludoDeIngreso()
 }
 
+  
+
+    
+    
 
 
-const clientes1 = JSON.parse(clientes);
-const clientes2 = JSON.parse(localStorage.setItem("clientes1"));
-console.log(clientes2)
+
 
 

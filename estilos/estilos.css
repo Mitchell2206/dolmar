@@ -521,6 +521,19 @@ body {
   margin: 5px;
 }
 
+.main-contacto .contacto #formulario .bienvenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  font-size: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+}
+
 .main-preguntas .accesorios {
   display: -webkit-box;
   display: -ms-flexbox;
