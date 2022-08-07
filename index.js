@@ -1,7 +1,5 @@
 
-const tienda = ["Campera", "Vestido", "CampZara", "CampTigre", "CampNegra"]
-
-tienda.unshift("Saco")
+/*tienda.unshift("Saco")
 
 
 
@@ -60,15 +58,7 @@ console.log(camperas)*/
 
 
 
-
-const formulario = document.querySelector("#formulario")
-const inputNombre = document.querySelector("#nombre")
-const inputApellidos = document.querySelector("#apellidos")
-const inputTelefono = document.querySelector("#telefono")
-const inputMail = document.querySelector("#mail")
-const inputComentario = document.querySelector("#modif02")
-const submit = document.querySelector("#submit")
-
+/*
 
 const clientes = []
 
@@ -86,23 +76,10 @@ class cliente {
  const saludo = document.querySelector(".bienvenido")
  
  function SaludoDeIngreso (){
-    saludo.innerHTML = `Bienvenido ${inputNombre.value} ${inputApellidos.value}, te estaremos contactando`
+    saludo.innerHTML = `Bienvenido ${inputNombre.value} ${inputApellidos.value}, te estaremos contactando.`
     
 }
-    
- 
-
-
- formulario.onsubmit = (event) => {
-    event.preventDefault()
-    console.log(event)
-    clientes.push(new cliente(inputNombre.value, inputApellidos.value, inputTelefono.value, inputMail.value, inputComentario.value))
-    console.log(clientes)
-    localStorage.setItem("clientes", JSON.stringify(clientes));
-    const otrosClientes = JSON.parse(localStorage.getItem("clientes"));
-    console.log(otrosClientes)
-    SaludoDeIngreso()
-}
+    */
 
   
 

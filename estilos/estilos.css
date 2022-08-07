@@ -202,7 +202,12 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.main-nuevo .card-group .card {
+.main-nuevo .todoropa {
+  gap: 1em;
+  width: 50%;
+}
+
+.main-nuevo .todoropa .card {
   background-color: #000000;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -213,19 +218,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: 1s;
-  transition: 1s;
-  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  padding: 10px;
 }
 
-.main-nuevo .card-group .card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.main-nuevo .card-group .card img {
-  width: 250px;
-  height: 300px;
+.main-nuevo .todoropa .card img {
+  width: 50%;
+  height: 250px;
   padding: 1px;
   border-radius: 10px;
   box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
@@ -233,42 +236,62 @@ body {
   -moz-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
 }
 
-.main-nuevo .card-group .card .card-body {
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-nuevo .card-group .card .card-body .card-title {
+.main-nuevo .todoropa .card p {
   color: #b89e67;
   font-family: "Playfair Display", serif;
 }
 
-.main-nuevo .card-group .card .card-body .card-text {
-  color: #ececec;
-  font-family: 'Mukta', sans-serif;
-}
+/*
+.card {
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 1s;
+  padding: 20px;
 
-.main-nuevo .card-group .card .card-body a {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: none;
-  color: #d6c6a5;
-  font-size: 15px;
-}
+  &:hover {
+    transform: scale(1.1);
+  }
 
+  img {
+    width: 250px;
+    height: 300px;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
+  }
+
+  .card-body {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .card-title {
+      color: rgb(184, 158, 103);
+      font-family: "Playfair Display", serif;
+
+    }
+
+    .card-text {
+      color: rgb(236, 236, 236);
+      font-family: 'Mukta', sans-serif;
+    }
+
+    a {
+      justify-content: center;
+      text-decoration: none;
+      color: rgb(214, 198, 165);
+      font-size: 15px;
+    }
+  }
+}
+}
+*/
 .main-mision {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -522,9 +545,6 @@ body {
 }
 
 .main-contacto .contacto #formulario .bienvenido {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 15px;
   font-size: 15px;
   -webkit-box-align: center;
