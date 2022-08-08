@@ -1,9 +1,9 @@
 
-const agregar = document.querySelectorAll("#id")
-const todoropa = document.querySelector(".todoropa")
-const carrito = document.querySelector(".super")
 
+const todoropa = document.querySelector(".todoropa")
+const carrito = document.querySelector(".carrito")
 let carritols = JSON.parse(localStorage.getItem("carritols")) || []
+
 
 function tiendaDolmar(array) {
     array.forEach(prendas => {
@@ -15,7 +15,7 @@ function tiendaDolmar(array) {
      
     <p>${prendas.title}</p>
 
-    <p>$${prendas.description}</p> 
+    <p>${prendas.description}</p> 
 
     <p>Precio: $${prendas.price}</p>   
     
@@ -26,31 +26,69 @@ function tiendaDolmar(array) {
 
 tiendaDolmar(tiendas)
 
-// aqui esta funcion de tiendaDolmar me la envia al html en columna e hice de todo para ponerlas en grupos de tres y no consegui manera. en el html lo las pondria en grupos de tres y usaba flex, pero como hago aqui si todas salen de un mismo maquetado en js//
 
-/*agregar.forEach((botonCompra)=>{
-    botonCompra.addEventListener('click', () => console.log('click'));
-});*/ //aqui queria ver si podia dar click al boton pero no me da respuesta//
+const buttonagregar = document.getElementsByClassName("button")
 
 
 
 
 function agregarAlCarrito(e) {
-
     carrito.innerHTML = ""
-    let button = e.target;
-    const idBoton = button.getAttribute("id");
-    let prendasclick = tiendas.find(elemento => elemento.id === idBoton);
-    carritols.push(prendasclick);
+    var btn = e.target;
+    var idBoton = btn.getAttribute("id");
+    let prendasclick = tiendas.find(elemento => elemento.id === idBoton)
+    console.log(prendasclick)
 
-    localStorage.setItem("carritols", JSON.stringify(carrito));
+    carritols.push("carritols", prendasclick)
+    localStorage.setItem("carritols", JSON.stringify(carritols));
+    alert("Agregaste " + prendasclick.category + " al carrito");
 
-    alert("Agregaste" + prendasclick.name + " al carrito");
+    carritoSuper()
+}
 
-    console.log(prendasclick);
-
+for (btn of buttonagregar) {
+    btn.addEventListener("click", agregarAlCarrito)
 }
 
 
 
-//aca abajo llamo al button de arriba para hacer una funcion con el click y no me lo lee//
+
+
+
+function carritoSuper() {
+    carritols.forEach(elemento => {
+        carrito.innerHTML +=
+
+
+            `
+          <div class="cardsuper">
+           
+          <img src=${elemento.img}>
+     
+             <p>${elemento.title}</p>
+
+            <p>Precio: $${elemento.price}</p>
+            <button class="eliminarbtn" id="${elemento.id}">borrar</button>
+          </div>
+          `
+        ""
+    })  
+    let totalImporte = carritols.reduce((acc, curr) => acc + parseInt(curr.price), 0)
+    let totalCompra = document.createElement("p")
+    totalCompra.getAttribute("class", "total")
+    totalCompra.innerHTML = ("total: " + totalImporte )
+    carrito.append(totalCompra)
+    
+    
+}
+localStorage.removeItem("carritols")
+
+ 
+ 
+ /*let totalCompra = document.createElement("p")
+    totalCompra.setAttribute("class", "total")
+    totalCompra.innerHTML = ("total:" + total)
+    carrito.append(totalCompra)
+    console.log(totalCompra)*/
+
+

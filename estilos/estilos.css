@@ -202,19 +202,86 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.main-nuevo .todoropa {
-  gap: 1em;
-  width: 50%;
+.main-nuevo .todocarrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.main-nuevo .todoropa .card {
-  background-color: #000000;
+.main-nuevo .todocarrito h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #f5c04e;
+  font-family: "Playfair Display", serif;
+}
+
+.main-nuevo .todocarrito .todoropa {
+  gap: 1em;
+}
+
+.main-nuevo .todocarrito .todoropa .card {
+  gap: 1em;
+  border: #c2b35e solid 1px;
+  width: 250px;
+  margin: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #000000;
+  gap: 2px;
+}
+
+.main-nuevo .todocarrito .todoropa .card img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  border-radius: 1px;
+  height: auto;
+}
+
+.main-nuevo .todocarrito .todoropa .card p {
+  font-size: 10px;
+  width: auto;
+  padding: 1px;
+  color: #b89e67;
+  font-family: "Playfair Display", serif;
+}
+
+.main-nuevo .todocarrito .todoropa .card .button {
+  width: 50%;
+}
+
+.main-nuevo .todocarrito .carrito h2 {
+  -webkit-box-flex: content;
+      -ms-flex: content;
+          flex: content;
+}
+
+.main-nuevo .todocarrito .carrito .cardsuper {
+  gap: 1em;
+  border: #c2b35e solid 1px;
+  width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,76 +289,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000000;
+  gap: 2px;
 }
 
-.main-nuevo .todoropa .card img {
-  width: 50%;
-  height: 250px;
+.main-nuevo .todocarrito .carrito img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  border-radius: 1px;
+  height: auto;
+}
+
+.main-nuevo .todocarrito .carrito p {
+  font-size: 10px;
+  width: auto;
   padding: 1px;
-  border-radius: 10px;
-  box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
-}
-
-.main-nuevo .todoropa .card p {
   color: #b89e67;
   font-family: "Playfair Display", serif;
 }
 
-/*
-.card {
-  background-color: #000000;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  transition: 1s;
-  padding: 20px;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  img {
-    width: 250px;
-    height: 300px;
-    padding: 1px;
-    border-radius: 10px;
-    box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
-    -moz-box-shadow: -1px 33px 77px -35px rgba(255, 255, 255, 0.75);
-  }
-
-  .card-body {
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    .card-title {
-      color: rgb(184, 158, 103);
-      font-family: "Playfair Display", serif;
-
-    }
-
-    .card-text {
-      color: rgb(236, 236, 236);
-      font-family: 'Mukta', sans-serif;
-    }
-
-    a {
-      justify-content: center;
-      text-decoration: none;
-      color: rgb(214, 198, 165);
-      font-size: 15px;
-    }
-  }
-}
-}
-*/
 .main-mision {
   display: -webkit-box;
   display: -ms-flexbox;
