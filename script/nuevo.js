@@ -2,7 +2,7 @@
 
 const todoropa = document.querySelector(".todoropa")
 const carrito = document.querySelector(".carrito")
-let carritols = JSON.parse(localStorage.getItem("carritols")) || []
+let carritols = []
 
 
 function tiendaDolmar(array) {
@@ -34,14 +34,14 @@ const buttonagregar = document.getElementsByClassName("button")
 
 function agregarAlCarrito(e) {
     carrito.innerHTML = ""
-    var btn = e.target;
-    var idBoton = btn.getAttribute("id");
+    let btn = e.target;
+    let idBoton = btn.getAttribute("id");
     let prendasclick = tiendas.find(elemento => elemento.id === idBoton)
-    console.log(prendasclick)
-
-    carritols.push("carritols", prendasclick)
+    carritols.push(prendasclick)
     localStorage.setItem("carritols", JSON.stringify(carritols));
-    alert("Agregaste " + prendasclick.category + " al carrito");
+    console.log(prendasclick)
+    swal("Genial","Agregaste " + prendasclick.category + " al carrito","success");
+    
 
     carritoSuper()
 }
@@ -49,7 +49,6 @@ function agregarAlCarrito(e) {
 for (btn of buttonagregar) {
     btn.addEventListener("click", agregarAlCarrito)
 }
-
 
 
 
@@ -72,7 +71,7 @@ function carritoSuper() {
           </div>
           `
         ""
-    })  
+    }) 
     let totalImporte = carritols.reduce((acc, curr) => acc + parseInt(curr.price), 0)
     let totalCompra = document.createElement("p")
     totalCompra.getAttribute("class", "total")
@@ -85,10 +84,6 @@ localStorage.removeItem("carritols")
 
  
  
- /*let totalCompra = document.createElement("p")
-    totalCompra.setAttribute("class", "total")
-    totalCompra.innerHTML = ("total:" + total)
-    carrito.append(totalCompra)
-    console.log(totalCompra)*/
+ 
 
 

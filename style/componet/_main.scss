@@ -116,96 +116,130 @@
     }
   }
 
-   .todocarrito{
-       display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-       align-items: center;
+  .todocarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
-      h2{
-        display: flex;
+    h2 {
+      display: flex;
       margin: 5px;
       padding: 20px;
       align-items: center;
       justify-content: space-around;
       color: $principal;
       font-family: "Playfair Display", serif;
+    }
+
+
+    .todoropa {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 2em;
+      column-gap: 1em;
+      margin-left: 4em;
+      margin-top: 1em;
+
+
+      .card {
+        gap: 1em;
+        width: 250px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        gap: 2px;
+
+        img {
+
+          justify-content: center;
+          width: 250px;
+          border-radius: 5px;
+          height: auto;
+          margin: 1px;
+          transition: 0.5s;
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+
+        p {
+          font-size: 12px;
+          width: auto;
+          padding: 1px;
+          color: rgb(184, 158, 103);
+          font-family: "Playfair Display", serif;
+        }
+
+        .button {
+          width: 50%;
+
+        }
+
+      }
+    }
+
+    .carrito {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 2em;
+      column-gap: 1em;
+      margin-left: 4em;
+      margin-top: 1em;
+
+      h2 {}
+
+      p {
+        font-size: 15px;
+        display: flex;
+        align-items: center
       }
 
+      .cardsuper {
+        gap: 1em;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        gap: 2px;
 
-     .todoropa{
-      gap: 1em;
-      
-
-         .card{
-          gap: 1em;
-          border: #c2b35e solid 1px;
-          width: 250px;
-          
-          margin: 5px;
+        img {
           justify-content: center;
-          align-items: center;
-          background-color: #000000;
-          gap: 2px;
-
-           img{
-          
-            justify-content: center;
-            width: 250px;
-            border-radius: 1px;
-            height: auto;
-           }
-           p{
-            font-size: 10px;
-            width: auto;
-            padding: 1px;
-            color: rgb(184, 158, 103);
-            font-family: "Playfair Display", serif;
-           }
-
-           .button{
-            width: 50%;
-
-           }
-
-         }
-     }
-
-     .carrito{
-
-       h2{flex: content;}
-          .cardsuper{
-            gap: 1em;
-          border: #c2b35e solid 1px;
           width: 100px;
-          display: flex;
-          flex-direction: column;
-          margin: 5px;
-          justify-content: center;
+          border-radius: 5px;
+          height: auto;
+
+        }
+
+        p {
           align-items: center;
-          background-color: #000000;
-          gap: 2px;
-          }
+          font-size: 10px;
+          width: auto;
+          padding: 1px;
+          color: rgb(184, 158, 103);
+          font-family: "Playfair Display", serif;
+        }
+      }
 
-          img{
-            justify-content: center;
-            width: 100px;
-            border-radius: 1px;
-            height: auto;
-          }
-
-          p{
-            font-size: 10px;
-            width: auto;
-            padding: 1px;
-            color: rgb(184, 158, 103);
-            font-family: "Playfair Display", serif;
-          }
+     p{
+      font-family: "Playfair Display", serif;
+      font-size: 15px;
+      color: rgb(184, 158, 103);
      }
 
-   }
+    }
+
+  }
 
 }
+
+
 
 
 .main-mision {

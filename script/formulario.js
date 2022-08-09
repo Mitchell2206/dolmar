@@ -21,12 +21,7 @@ class cliente {
     }
   
 }
- const saludo = document.querySelector(".bienvenido")
- 
- function SaludoDeIngreso (){
-    saludo.innerHTML = `Bienvenido ${inputNombre.value} ${inputApellidos.value}, te estaremos contactando.`
-    
-}
+
 
 
 
@@ -38,6 +33,6 @@ formulario.onsubmit = (event) => {
     localStorage.setItem("clientes", JSON.stringify(clientes));
     const otrosClientes = JSON.parse(localStorage.getItem("clientes"));
     console.log(otrosClientes)
-    SaludoDeIngreso()
+    swal("GENIAL!", "Gracias " +  inputNombre.value + " te estaremos contactando", "success")
     formulario.reset()
 }
