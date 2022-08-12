@@ -1,7 +1,7 @@
-
-
 const todoropa = document.querySelector(".todoropa")
 const carrito = document.querySelector(".carrito")
+
+
 let carritols = []
 
 
@@ -39,10 +39,8 @@ function agregarAlCarrito(e) {
     let prendasclick = tiendas.find(elemento => elemento.id === idBoton)
     carritols.push(prendasclick)
     localStorage.setItem("carritols", JSON.stringify(carritols));
-    console.log(prendasclick)
     swal("Genial","Agregaste " + prendasclick.category + " al carrito","success");
     
-
     carritoSuper()
 }
 
@@ -55,35 +53,56 @@ for (btn of buttonagregar) {
 
 
 function carritoSuper() {
-    carritols.forEach(elemento => {
+    carritols.forEach(prendas => {
         carrito.innerHTML +=
 
 
             `
           <div class="cardsuper">
            
-          <img src=${elemento.img}>
+          <img src=${prendas.img}>
      
-             <p>${elemento.title}</p>
+             <p>${prendas.title}</p>
 
-            <p>Precio: $${elemento.price}</p>
-            <button class="eliminarbtn" id="${elemento.id}">borrar</button>
+            <p>Precio: $${prendas.price}</p>
+            <button class="btnx" id="${prendas.id}">Eliminar ${prendas.category} </button>
           </div>
           `
         ""
+        
     }) 
+
     let totalImporte = carritols.reduce((acc, curr) => acc + parseInt(curr.price), 0)
     let totalCompra = document.createElement("p")
     totalCompra.getAttribute("class", "total")
     totalCompra.innerHTML = ("total: " + totalImporte )
-    carrito.append(totalCompra)
-    
-    
+    carrito.append(totalCompra) 
+  
+    for (borrarBtn of btnX) {
+    borrarBtn.addEventListener("click", sacarArticulos)  
+    }
+    console.log(carritols)
 }
-localStorage.removeItem("carritols")
 
- 
- 
- 
+const btnX = document.getElementsByClassName("btnx") 
+
+
+function sacarArticulos(e){
+    carrito.innerHTML = ""
+    let borrarBtn = e.target;
+    let borrarbtnX = borrarBtn.getAttribute("id");
+    const sacarArticulo = carritols.findIndex(elemento => elemento.id === borrarbtnX)
+    carritols.splice(sacarArticulo, 1)
+    localStorage.removeItem("carritols")
+    localStorage.setItem("carritols", JSON.stringify(carritols))
+    carritoSuper(carritols)
+    swal( "" ,"Eliminaste un articulo del carrito","success");
+}
+
+
+
+
+
+
 
 

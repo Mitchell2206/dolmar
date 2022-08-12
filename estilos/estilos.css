@@ -261,6 +261,13 @@ body {
           align-items: center;
   background-color: #000000;
   gap: 2px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.main-nuevo .todocarrito .todoropa .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-nuevo .todocarrito .todoropa .card img {
@@ -271,13 +278,6 @@ body {
   border-radius: 5px;
   height: auto;
   margin: 1px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.main-nuevo .todocarrito .todoropa .card img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .main-nuevo .todocarrito .todoropa .card p {
@@ -289,7 +289,14 @@ body {
 }
 
 .main-nuevo .todocarrito .todoropa .card .button {
-  width: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  background-color: #000000;
+  color: #d6c6a5;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
 }
 
 .main-nuevo .todocarrito .carrito {
@@ -357,6 +364,17 @@ body {
   width: auto;
   padding: 1px;
   color: #b89e67;
+  font-family: "Playfair Display", serif;
+}
+
+.main-nuevo .todocarrito .carrito .cardsuper .btnx {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  background-color: #000000;
+  color: #d6c6a5;
+  font-size: 15px;
   font-family: "Playfair Display", serif;
 }
 

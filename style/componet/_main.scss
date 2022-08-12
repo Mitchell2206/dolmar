@@ -141,9 +141,11 @@
       column-gap: 1em;
       margin-left: 4em;
       margin-top: 1em;
-
+      
+      
 
       .card {
+        
         gap: 1em;
         width: 250px;
         margin: 5px;
@@ -151,6 +153,10 @@
         align-items: center;
         background-color: #000000;
         gap: 2px;
+        transition: 1s;
+         &:hover{
+            transform: scale(1.1);
+          }
 
         img {
 
@@ -159,10 +165,8 @@
           border-radius: 5px;
           height: auto;
           margin: 1px;
-          transition: 0.5s;
-          &:hover{
-            transform: scale(1.1);
-          }
+         
+          
         }
 
         p {
@@ -173,10 +177,16 @@
           font-family: "Playfair Display", serif;
         }
 
-        .button {
-          width: 50%;
-
-        }
+        .button{
+          
+          justify-content: center;
+          text-decoration: none;
+          background-color: #000000;
+          color: rgb(214, 198, 165);
+          font-size: 15px;
+          font-family: "Playfair Display", serif;
+        
+        } 
 
       }
     }
@@ -225,6 +235,17 @@
           color: rgb(184, 158, 103);
           font-family: "Playfair Display", serif;
         }
+
+        .btnx{
+          
+          justify-content: center;
+          text-decoration: none;
+          background-color: #000000;
+          color: rgb(214, 198, 165);
+          font-size: 15px;
+          font-family: "Playfair Display", serif;
+        
+        } 
       }
 
      p{
