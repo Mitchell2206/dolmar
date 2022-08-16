@@ -185,13 +185,17 @@
           color: rgb(214, 198, 165);
           font-size: 15px;
           font-family: "Playfair Display", serif;
-        
+          &:hover{
+            color: rgb(59, 214, 28);
+          }
         } 
 
       }
     }
 
     .carrito {
+      padding: 50px;
+      margin-bottom: 50px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -244,7 +248,11 @@
           color: rgb(214, 198, 165);
           font-size: 15px;
           font-family: "Playfair Display", serif;
-        
+          &:hover{
+            color: rgb(214, 28, 28);
+          }
+
+          
         } 
       }
 
@@ -255,6 +263,9 @@
      }
 
     }
+
+    
+
 
   }
 

@@ -67,5 +67,27 @@ const tiendas = [
         description:
             "Hermoso tapado negro con detalles rojos.",
         img: "../img/tapado.jpg",
+    },{
+        id: "7",
+        category: "Tapado",
+        title: "Tapado Negro",
+        marca: "Rapsodia",
+        talle: "m",
+        price: "14000",
+        stock: "1",
+        description:
+            "Hermoso tapado negro con detalles rojos.",
+        img: "../img/tapado.jpg",
+    },{
+        id: "8",
+        category: "vestido",
+        title: "vestido marron",
+        marca: "Rapsodia",
+        talle: "m",
+        price: "12000",
+        stock: "1",
+        description:
+            "Hermoso tapado negro con detalles rojos.",
+        img: "../img/vmarron.jpg",
     },
 ];

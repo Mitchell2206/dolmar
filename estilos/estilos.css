@@ -299,7 +299,13 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+.main-nuevo .todocarrito .todoropa .card .button:hover {
+  color: #3bd61c;
+}
+
 .main-nuevo .todocarrito .carrito {
+  padding: 50px;
+  margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,6 +382,10 @@ body {
   color: #d6c6a5;
   font-size: 15px;
   font-family: "Playfair Display", serif;
+}
+
+.main-nuevo .todocarrito .carrito .cardsuper .btnx:hover {
+  color: #d61c1c;
 }
 
 .main-nuevo .todocarrito .carrito p {

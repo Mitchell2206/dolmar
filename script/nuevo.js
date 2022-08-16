@@ -72,6 +72,7 @@ function carritoSuper() {
         
     }) 
 
+
     let totalImporte = carritols.reduce((acc, curr) => acc + parseInt(curr.price), 0)
     let totalCompra = document.createElement("p")
     totalCompra.getAttribute("class", "total")
@@ -98,11 +99,6 @@ function sacarArticulos(e){
     carritoSuper(carritols)
     swal( "" ,"Eliminaste un articulo del carrito","success");
 }
-
-
-
-
-
 
 
 
