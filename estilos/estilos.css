@@ -309,10 +309,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 2em;
@@ -333,22 +339,28 @@ body {
 }
 
 .main-nuevo .todocarrito .carrito .cardsuper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 2em;
   gap: 1em;
   width: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
   background-color: #000000;
   gap: 2px;
 }
@@ -392,6 +404,34 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 15px;
   color: #b89e67;
+}
+
+.main-nuevo .todocarrito .carrito .finalizarCompra {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  color: #b89e67;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 69px;
+  height: 65px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.main-nuevo .todocarrito .carrito .finalizarCompra:hover {
+  color: green;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main-mision {

@@ -141,11 +141,11 @@
       column-gap: 1em;
       margin-left: 4em;
       margin-top: 1em;
-      
-      
+
+
 
       .card {
-        
+
         gap: 1em;
         width: 250px;
         margin: 5px;
@@ -154,9 +154,10 @@
         background-color: #000000;
         gap: 2px;
         transition: 1s;
-         &:hover{
-            transform: scale(1.1);
-          }
+
+        &:hover {
+          transform: scale(1.1);
+        }
 
         img {
 
@@ -165,8 +166,8 @@
           border-radius: 5px;
           height: auto;
           margin: 1px;
-         
-          
+
+
         }
 
         p {
@@ -177,27 +178,31 @@
           font-family: "Playfair Display", serif;
         }
 
-        .button{
-          
+        .button {
+
           justify-content: center;
           text-decoration: none;
           background-color: #000000;
           color: rgb(214, 198, 165);
           font-size: 15px;
           font-family: "Playfair Display", serif;
-          &:hover{
+
+          &:hover {
             color: rgb(59, 214, 28);
           }
-        } 
+        }
 
       }
     }
 
     .carrito {
+
       padding: 50px;
       margin-bottom: 50px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       row-gap: 2em;
       column-gap: 1em;
@@ -213,11 +218,15 @@
       }
 
       .cardsuper {
+        flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 2em;
         gap: 1em;
         width: 100px;
         display: flex;
         flex-direction: column;
         margin: 5px;
+        align-items: center;
         justify-content: center;
         align-items: center;
         background-color: #000000;
@@ -240,31 +249,57 @@
           font-family: "Playfair Display", serif;
         }
 
-        .btnx{
-          
+        .btnx {
+
           justify-content: center;
           text-decoration: none;
           background-color: #000000;
           color: rgb(214, 198, 165);
           font-size: 15px;
           font-family: "Playfair Display", serif;
-          &:hover{
+
+          &:hover {
             color: rgb(214, 28, 28);
+            
           }
 
-          
-        } 
+
+        }
       }
 
-     p{
-      font-family: "Playfair Display", serif;
-      font-size: 15px;
-      color: rgb(184, 158, 103);
-     }
+      p {
+        font-family: "Playfair Display", serif;
+        font-size: 15px;
+        color: rgb(184, 158, 103);
+      }
+
+
+      .finalizarCompra {
+        font-family: "Playfair Display", serif;
+        font-size: 15px;
+        color: rgb(184, 158, 103);
+        display: flex;
+        transition: 1s;
+        width: 69px;
+        height: 65px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        
+
+        &:hover{
+          color: green;
+          transform: scale(1.1);
+        }
+
+      }
 
     }
 
-    
+
 
 
   }
@@ -446,7 +481,7 @@
         color: rgb(184, 158, 103);
       }
 
-      
+
       input {
         display: flex;
         justify-content: center;
@@ -473,8 +508,8 @@
         padding: 7px;
         margin: 5px;
       }
-      
-      
+
+
       .bienvenido {
         padding: 15px;
         font-size: 15px;

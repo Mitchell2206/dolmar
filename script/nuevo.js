@@ -78,14 +78,22 @@ function carritoSuper() {
     totalCompra.getAttribute("class", "total")
     totalCompra.innerHTML = ("total: $" + totalImporte )
     carrito.append(totalCompra) 
-  
+   
+
     for (borrarBtn of btnX) {
     borrarBtn.addEventListener("click", sacarArticulos)}
     
-    for (finalCompra of buttonZ) {
-        finalCompra.addEventListener("click", tuCarrito)}
+    
 
-    console.log(carritols)
+    let finalizarCompra = document.createElement("botton") 
+    finalizarCompra.setAttribute("class", "finalizarCompra")
+    finalizarCompra.innerHTML=("Finalizar compra")
+    carrito.append(finalizarCompra)
+
+    finalizarCompra.addEventListener("click", ()=>{
+       window.location.href="contacto.html"
+    })
+
 }
 
 const btnX = document.getElementsByClassName("btnx") 
@@ -105,25 +113,6 @@ function sacarArticulos(e){
 
 
 }
-const finalizar = document.getElementsByClassName("finalizarCompra") 
-
-let carroSuper = JSON.parse(localStorage.getItem("carritols")) || []
-
- function tuCarrito(){
-    carroSuper.forEach(elemento =>{
-        finalizar.innerHTML  +=`
-
-        <div class="finalizacion">
-           
-          <p>finalizar compra: $${totalImporte}</p>
-          <button class="buttonZ" id="${elemento.id}">Eliminar ${elemento.category} </button>
-        </div>
-        `
-        ""
-    })
-    
- }
-    
 
 
 
