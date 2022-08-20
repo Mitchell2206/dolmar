@@ -446,14 +446,15 @@
         color: rgb(184, 158, 103);
       }
 
+      
       input {
         display: flex;
-        flex-direction: column;
-        border-radius: 5px;
-        height: 40px;
+        justify-content: center;
+        padding: 2px;
         width: 250px;
+        height: 40px;
+        border-radius: 5px;
       }
-
 
 
       #modif02 {
@@ -467,12 +468,13 @@
         color: rgb(201, 185, 152);
       }
 
-      .botonAcceder {
+      #button {
         width: auto;
         padding: 7px;
         margin: 5px;
       }
-
+      
+      
       .bienvenido {
         padding: 15px;
         font-size: 15px;

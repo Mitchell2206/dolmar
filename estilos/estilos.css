@@ -620,13 +620,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 5px;
-  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px;
   width: 250px;
+  height: 40px;
+  border-radius: 5px;
 }
 
 .main-contacto .contacto #formulario #modif02 {
@@ -640,7 +640,7 @@ body {
   color: #c9b998;
 }
 
-.main-contacto .contacto #formulario .botonAcceder {
+.main-contacto .contacto #formulario #button {
   width: auto;
   padding: 7px;
   margin: 5px;

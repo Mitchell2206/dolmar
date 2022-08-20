@@ -1,38 +1,39 @@
-const formulario = document.querySelector("#formulario")
+
 const inputNombre = document.querySelector("#nombre")
-const inputApellidos = document.querySelector("#apellidos")
-const inputTelefono = document.querySelector("#telefono")
-const inputMail = document.querySelector("#mail")
-const inputComentario = document.querySelector("#modif02")
-const submit = document.querySelector("#submit")
-
-
+const btn = document.getElementById('button');
 
 const clientes = []
 
 
 class cliente {
-    constructor( nombre, apellido, telefono, mail, comentario){
+    constructor(nombre, apellido, telefono, mail, comentario) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.mail = mail;
         this.comentario = comentario;
     }
-  
+
 }
 
+document.getElementById('formulario')
+    .addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        btn.value = 'Enviando...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_obped7g';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Enviar Mensaje';
+                swal("GENIAL!", "Gracias " + inputNombre.value + " te estaremos contactando", "success")
+            }, (err) => {
+                btn.value = 'Enviar Mensaje';
+                alert(JSON.stringify(err));
+            });
+    });
 
 
 
-formulario.onsubmit = (event) => {
-    event.preventDefault()
-    console.log(event)
-    clientes.push(new cliente(inputNombre.value, inputApellidos.value, inputTelefono.value, inputMail.value, inputComentario.value))
-    console.log(clientes)
-    localStorage.setItem("clientes", JSON.stringify(clientes));
-    const otrosClientes = JSON.parse(localStorage.getItem("clientes"));
-    console.log(otrosClientes)
-    swal("GENIAL!", "Gracias " +  inputNombre.value + " te estaremos contactando", "success")
-    formulario.reset()
-}

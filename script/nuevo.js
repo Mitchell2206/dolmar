@@ -76,12 +76,15 @@ function carritoSuper() {
     let totalImporte = carritols.reduce((acc, curr) => acc + parseInt(curr.price), 0)
     let totalCompra = document.createElement("p")
     totalCompra.getAttribute("class", "total")
-    totalCompra.innerHTML = ("total: " + totalImporte )
+    totalCompra.innerHTML = ("total: $" + totalImporte )
     carrito.append(totalCompra) 
   
     for (borrarBtn of btnX) {
-    borrarBtn.addEventListener("click", sacarArticulos)  
-    }
+    borrarBtn.addEventListener("click", sacarArticulos)}
+    
+    for (finalCompra of buttonZ) {
+        finalCompra.addEventListener("click", tuCarrito)}
+
     console.log(carritols)
 }
 
@@ -98,7 +101,32 @@ function sacarArticulos(e){
     localStorage.setItem("carritols", JSON.stringify(carritols))
     carritoSuper(carritols)
     swal( "" ,"Eliminaste un articulo del carrito","success");
+
+
+
 }
+const finalizar = document.getElementsByClassName("finalizarCompra") 
+
+let carroSuper = JSON.parse(localStorage.getItem("carritols")) || []
+
+ function tuCarrito(){
+    carroSuper.forEach(elemento =>{
+        finalizar.innerHTML  +=`
+
+        <div class="finalizacion">
+           
+          <p>finalizar compra: $${totalImporte}</p>
+          <button class="buttonZ" id="${elemento.id}">Eliminar ${elemento.category} </button>
+        </div>
+        `
+        ""
+    })
+    
+ }
+    
+
+
+
 
 
 
