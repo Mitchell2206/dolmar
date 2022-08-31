@@ -182,13 +182,15 @@
 
           justify-content: center;
           text-decoration: none;
-          background-color: #000000;
-          color: rgb(214, 198, 165);
+          color: rgb(196, 143, 37);
           font-size: 15px;
+          width: 200px;
+          height: 50px;
+          border-radius: 5px;
           font-family: "Playfair Display", serif;
 
           &:hover {
-            color: rgb(59, 214, 28);
+            color: rgb(7, 8, 7);
           }
         }
 
@@ -200,7 +202,7 @@
       padding: 50px;
       margin-bottom: 50px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
@@ -219,8 +221,8 @@
 
       .cardsuper {
         flex-direction: row;
-      flex-wrap: wrap;
-      row-gap: 2em;
+        flex-wrap: wrap;
+        row-gap: 2em;
         gap: 1em;
         width: 100px;
         display: flex;
@@ -253,14 +255,16 @@
 
           justify-content: center;
           text-decoration: none;
-          background-color: #000000;
-          color: rgb(214, 198, 165);
+          color: rgb(196, 143, 37);
           font-size: 15px;
+          width: 100px;
+          height: 50px;
+          border-radius: 5px;
           font-family: "Playfair Display", serif;
 
           &:hover {
-            color: rgb(214, 28, 28);
-            
+            color: rgb(5, 5, 5);
+
           }
 
 
@@ -275,23 +279,21 @@
 
 
       .finalizarCompra {
-        font-family: "Playfair Display", serif;
-        font-size: 15px;
-        color: rgb(184, 158, 103);
         display: flex;
-        transition: 1s;
-        width: 69px;
-        height: 65px;
-        border-radius: 10px;
-        background-color: antiquewhite;
         justify-content: center;
-        align-items: center;
+        text-decoration: none;
+        color: rgb(196, 143, 37);
+        font-size: 15px;
+        width: 70px;
+        height: auto;
+        border-radius: 5px;
+        font-family: "Playfair Display", serif;
+        background-color: aliceblue;
         padding: 10px;
 
-        
 
-        &:hover{
-          color: green;
+        &:hover {
+          color: rgb(224, 32, 32);
           transform: scale(1.1);
         }
 
@@ -305,6 +307,130 @@
   }
 
 }
+
+
+
+.main-carrito {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: rgb(196, 143, 37);
+    font-size: 30px;
+  }
+
+  .carrito {
+
+    padding: 50px;
+    margin-bottom: 50px;
+    margin: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    column-gap: 1em;
+    margin-left: 4em;
+    margin-top: 1em;
+
+    p {
+      font-size: 15px;
+      display: flex;
+      align-items: center
+    }
+
+    .cardsuper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 2em;
+      gap: 1em;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      margin: 5px;
+      align-items: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #000000;
+      gap: 2px;
+
+      img {
+        justify-content: center;
+        width: 200px;
+        padding: auto;
+        margin: auto;
+        border-radius: 5px;
+        height: auto;
+
+      }
+
+      p {
+        align-items: center;
+        font-size: 15px;
+        width: auto;
+        padding: 1px;
+        color: rgb(184, 158, 103);
+        font-family: "Playfair Display", serif;
+      }
+
+      .btnxdos {
+
+        justify-content: center;
+        text-decoration: none;
+        color: rgb(196, 143, 37);
+        font-size: 15px;
+        width: 100px;
+        height: 50px;
+        border-radius: 5px;
+        font-family: "Playfair Display", serif;
+
+        &:hover {
+          color: rgb(5, 5, 5);
+
+        }
+
+
+      }
+
+    }
+
+    p {
+      font-family: "Playfair Display", serif;
+      font-size: 15px;
+      color: rgb(184, 158, 103);
+    }
+
+
+    .finalizarCompra {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      color: rgb(196, 143, 37);
+      font-size: 15px;
+      width: 70px;
+      height: auto;
+      border-radius: 5px;
+      font-family: "Playfair Display", serif;
+      background-color: aliceblue;
+      padding: 10px;
+
+
+      &:hover {
+        color: rgb(224, 32, 32);
+        transform: scale(1.1);
+      }
+
+    }
+  }
+
+
+}
+
+
 
 
 

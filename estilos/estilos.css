@@ -293,14 +293,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  background-color: #000000;
-  color: #d6c6a5;
+  color: #c48f25;
   font-size: 15px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
   font-family: "Playfair Display", serif;
 }
 
 .main-nuevo .todocarrito .todoropa .card .button:hover {
-  color: #3bd61c;
+  color: #070807;
 }
 
 .main-nuevo .todocarrito .carrito {
@@ -309,10 +311,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -390,14 +392,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  background-color: #000000;
-  color: #d6c6a5;
+  color: #c48f25;
   font-size: 15px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
   font-family: "Playfair Display", serif;
 }
 
 .main-nuevo .todocarrito .carrito .cardsuper .btnx:hover {
-  color: #d61c1c;
+  color: #050505;
 }
 
 .main-nuevo .todocarrito .carrito p {
@@ -407,29 +411,179 @@ body {
 }
 
 .main-nuevo .todocarrito .carrito .finalizarCompra {
-  font-family: "Playfair Display", serif;
-  font-size: 15px;
-  color: #b89e67;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: 1s;
-  transition: 1s;
-  width: 69px;
-  height: 65px;
-  border-radius: 10px;
-  background-color: antiquewhite;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #c48f25;
+  font-size: 15px;
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.main-nuevo .todocarrito .carrito .finalizarCompra:hover {
+  color: #e02020;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main-carrito {
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-carrito h2 {
+  color: #c48f25;
+  font-size: 30px;
+}
+
+.main-carrito .carrito {
+  padding: 50px;
+  margin-bottom: 50px;
+  margin: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 2em;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  margin-left: 4em;
+  margin-top: 1em;
+}
+
+.main-carrito .carrito p {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-carrito .carrito .cardsuper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 2em;
+  gap: 1em;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  gap: 2px;
+}
+
+.main-carrito .carrito .cardsuper img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  padding: auto;
+  margin: auto;
+  border-radius: 5px;
+  height: auto;
+}
+
+.main-carrito .carrito .cardsuper p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  width: auto;
+  padding: 1px;
+  color: #b89e67;
+  font-family: "Playfair Display", serif;
+}
+
+.main-carrito .carrito .cardsuper .btnxdos {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #c48f25;
+  font-size: 15px;
+  width: 100px;
+  height: 50px;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.main-carrito .carrito .cardsuper .btnxdos:hover {
+  color: #050505;
+}
+
+.main-carrito .carrito p {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  color: #b89e67;
+}
+
+.main-carrito .carrito .finalizarCompra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #c48f25;
+  font-size: 15px;
+  width: 70px;
+  height: auto;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+  background-color: aliceblue;
   padding: 10px;
 }
 
-.main-nuevo .todocarrito .carrito .finalizarCompra:hover {
-  color: green;
+.main-carrito .carrito .finalizarCompra:hover {
+  color: #e02020;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }

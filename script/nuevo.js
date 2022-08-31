@@ -74,6 +74,7 @@ function carritoSuper() {
     }) 
     
     
+
     let totalImporte = carritols.reduce((acc, curr) => acc + parseInt(curr.price), 0)
     let totalCompra = document.createElement("p")
     totalCompra.getAttribute("class", "total")
@@ -82,15 +83,13 @@ function carritoSuper() {
     for (borrarBtn of btnX) {
     borrarBtn.addEventListener("click", sacarArticulos)}
     
-    
-
     let finalizarCompra = document.createElement("botton") 
     finalizarCompra.setAttribute("class", "finalizarCompra")
-    finalizarCompra.innerHTML=("Finalizar compra")
+    finalizarCompra.innerHTML=("Comprar")
     carrito.append(finalizarCompra)
 
     finalizarCompra.addEventListener("click", ()=>{
-       window.location.href="contacto.html"
+       window.location.href="carrito.html"
     })
 
    
@@ -119,49 +118,4 @@ function sacarArticulos(e){
 
 }
 
-let carritoParseado = JSON.parse(localStorage.getItem("carritols"))
 
-
-
-function localStoreCarrito (){
-    carritoParseado.forEach(prendas => {
-        carrito.innerHTML +=
-
-
-            `
-          <div class="cardsuper">
-           
-          <img src=${prendas.img}>
-     
-             <p>${prendas.title}</p>
-
-            <p>Precio: $${prendas.price}</p>
-            <button class="btnx" id="${prendas.id}">Eliminar ${prendas.category} </button>
-          </div>
-          `
-        ""
-        
-    }) 
-
-    let totalImporte = carritoParseado.reduce((acc, curr) => acc + parseInt(curr.price), 0)
-    let totalCompra = document.createElement("p")
-    totalCompra.getAttribute("class", "total")
-    totalCompra.innerHTML = ("total: $" + totalImporte )
-    carrito.append(totalCompra) 
-
-    for (borrarBtn of btnX) {
-    borrarBtn.addEventListener("click", sacarArticulos)}
-    
-    
-
-    let finalizarCompra = document.createElement("botton") 
-    finalizarCompra.setAttribute("class", "finalizarCompra")
-    finalizarCompra.innerHTML=("Finalizar compra")
-    carrito.append(finalizarCompra)
-
-    finalizarCompra.addEventListener("click", ()=>{
-       window.location.href="contacto.html"
-    })
-}
-
-localStoreCarrito()
