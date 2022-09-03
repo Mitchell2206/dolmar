@@ -329,9 +329,10 @@
     margin: 1px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
     row-gap: 2em;
     column-gap: 1em;
     margin-left: 4em;

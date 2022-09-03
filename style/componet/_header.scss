@@ -17,6 +17,18 @@
                 color: rgb(206, 162, 50);
                 font-family: "Playfair Display", serif;
               }
+              img{
+                width: 30px;
+                height: 30px;
+                transform: 1s;
+                overflow:hidden;
+                
+                &:hover{
+                  -webkit-transform:scale(1.3);transform:scale(1.3);
+                  
+                transform: 2s;
+                 }
+              }
             }
           }
         }

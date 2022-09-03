@@ -78,7 +78,7 @@ function carritoSuper() {
     let totalImporte = carritols.reduce((acc, curr) => acc + parseInt(curr.price), 0)
     let totalCompra = document.createElement("p")
     totalCompra.getAttribute("class", "total")
-    totalCompra.innerHTML = ("total: $" + totalImporte )
+    totalCompra.innerHTML = ("total: $ "  + totalImporte )
     carrito.append(totalCompra) 
     for (borrarBtn of btnX) {
     borrarBtn.addEventListener("click", sacarArticulos)}

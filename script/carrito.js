@@ -17,7 +17,7 @@ function localStoreCarrito (){
      
              <p>${prendas.title}</p>
 
-            <p>Precio: $${prendas.price}</p>
+            <p>Precio: $ ${prendas.price}</p>
             
           </div>
           `
@@ -28,7 +28,7 @@ function localStoreCarrito (){
     let totalImporte = carritoParseado.reduce((acc, curr) => acc + parseInt(curr.price), 0)
     let totalCompra = document.createElement("p")
     totalCompra.getAttribute("class", "total")
-    totalCompra.innerHTML = ("total: $" + totalImporte )
+    totalCompra.innerHTML = ("total: $ " + totalImporte )
     carrito.append(totalCompra) 
 
     
@@ -39,7 +39,7 @@ function localStoreCarrito (){
     carrito.append(finalizarCompra)
 
     finalizarCompra.addEventListener("click", ()=>{
-       window.location.href="carrito.html"
+       window.location.href="contacto.html"
     })
 
     for (borrarBtnDos of btnDos) {
