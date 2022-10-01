@@ -63,5 +63,3 @@ function sacarArticulosDos(e){
     swal( "" ,"Eliminaste un articulo del carrito","success");
     
 }
-
-

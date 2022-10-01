@@ -91,3 +91,10 @@ const tiendas = [
         img: "../img/vmarron.jpg",
     },
 ];
+
+
+const productosJson = JSON.stringify(tiendas);
+localStorage.setItem("tiendas", productosJson)
+
+
+
